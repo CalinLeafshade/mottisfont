@@ -1,0 +1,13 @@
+{
+  "name": "mottisfont",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.10.6",
+    "less-middleware": "^1.0.4"
+  }
+}
