@@ -11,6 +11,7 @@ function gotoPerson (name) {
     var t = $('#person-template').html();
     currentPerson = Model.personByName(name);
     var view = {
+        loopingVideo: currentPerson.loopingVideo,
         name: currentPerson.name,
         topics: currentPerson.topics.map(function(e,i) {
           return { id: i, text: e };
@@ -24,7 +25,7 @@ function gotoTopic (idx) {
         video: currentPerson.topicVideo(idx),
         name: currentPerson.name,
         topic: currentPerson.topics[idx]
-    }
+    };
     var t = $('#topic-template').html();
     $('.container').html(Mustache.render(t, view));
 }
