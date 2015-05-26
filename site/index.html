@@ -12,17 +12,23 @@
 <script id="main-template" type="text/x-template">
 	<div class="row">
 	{{#people}}
-		<a href="#" data-name="{{name}}" class="user-main nav-link col-sm-6">
+		<a href="#" data-name="{{name}}" class="user-main nav-link col-sm-6 smallthumb">
 			<h2>{{name}}</h2>
-			<video autoplay loop src={{loopingVideo}}></video>
+			<div class="thumbcont"> 
+			<video muted autoplay loop src={{loopingVideo}}></video>
+			</div>
+			<!--<img src={{loopingVideo}}>-->
 		</a>
 	{{/people}}
 	</div>
+		<div class="banner1">Across The Table: Welcome to Mottisfont ...</div>
+		<div class="banner2">Choose a dining companion by touching their face</div>
 </script>
 
 <script id="person-template" type="text/x-template">
 	<div class="row">
-		<div class="col-sm-12">
+		<div class="col-sm-12 perthumb">
+			<!--<img src={{loopingVideo}}>-->
 			<video autoplay loop src={{loopingVideo}}></video>
 		</div>
 	</div>
@@ -36,7 +42,8 @@
 	<div class="break-15">
 	<div class="row">
 		<div class="col-sm-12">
-			<a href="#" data-target="main" class="nav-link btn btn-default btn-lg btn-block">Back</a>
+			<div class="banner1">Across The Table: Please Choose a Topic</div>
+			<a href="#" data-target="main" class="nav-link btn btn-default btn-lg btn-block backbtn">Back</a>
 		</div>
 	</div>
 </script>
@@ -49,7 +56,8 @@
 	</div>
 	<div class="row">
 		<div class="col-sm-12">
-			<a href="#" data-target="person" class="nav-link btn btn-default btn-lg btn-block">Back</a>
+			<div class="banner1">Across The Table:</div>
+			<a href="#" data-target="person" class="nav-link btn btn-default btn-lg btn-block backbtn">Back</a>
 		</div>
 	</div>
 </script>

@@ -3,6 +3,10 @@
 html, body {
 	height: 100%;
 }
+body {
+	background: url("/images/main_background_tint.jpg"); 
+	background-size: cover;
+}
 
 .container {
 	margin-top: 30px;
@@ -11,27 +15,73 @@ html, body {
 video {
 	width: 100%;
 	height: 100%;
-	border-radius: 4px;
+	border-radius: 10px;
+	background-color: #000;
+	overflow: hidden;
 }
 
 .user-main {
 
 	margin-bottom: 15px;
-
+	.thumbcont {
+		width: 520px;
+		height: 520px;
+		overflow: hidden;
+		border-radius: 10px;
+	}
+	img, video {
+		width: 520px;
+		height: 925px;
+	}
 	h2 {
 		position: absolute;
 		bottom: 20px;
 		text-align: center;
-		width: 100%;
+		width: 520px;
 		display: block;
 		margin: 0 auto;
 		margin: auto;
 		text-align: center;
-		background-color: rgba(255,255,255,0.2);
-		border-radius: 4px;
+		background-color: rgba(0,0,0,0.2);
+		border-radius: 0px;
 		padding: 30px;
+		color: #fff;
+		font-weight: 900;
 	}
 
+}
+
+.btn {
+	color: #fff;
+	background-color: #738f3b;
+	border: none;
+}
+.btn:hover {
+	color: #fff;
+	background-color: #738f3b;
+}
+.banner1, .banner2 {
+	width: 100%;
+	line-height: 1.33;
+	padding: 10px 16px;
+	border-radius: 6px;
+	font-size: 18px;
+	color: #fff;
+	text-align: center;
+	margin-bottom: 16px;
+
+}
+.banner1 {
+	background: url("/images/choose_topic.jpg");
+	background-size: cover;
+}
+.backbtn, .banner2 {
+	background: url("/images/choose_companion.jpg");
+	background-size: cover;
+}
+
+.perthumb {
+	text-align: center;	
 }
 
 .topics {
