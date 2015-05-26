@@ -21,9 +21,9 @@ Person.prototype.topicVideo = function(idx) {
 Model = {
 	people: [
 		new Person("Catherine", [ "Catherine and The Nuthatch", "Catherine's Flock", "Foraging", "Catherine, the Outdoor Ranger", "Why I love the Seasons at Mottisfont", "Zoonotic Diseases" ]),
-		new Person("Dylan", [ "Change at Mottisfont", "Conservation and Visitor access", "Hi I'm Dylan and I'm the Countryside Manager", "Mottisfont History", "Mottisfont is very special to me", "My most challenging and enjoyable roles" ]),
-		new Person("Helen", [ "I didn't expect the Challenges", "I was the wild card", "Mottisfont has so much to offer", "Mottisfont means everything to me", "My Journey to Mottisfont", "One of my many moments at Mottisfont" ]),
-		new Person("Howard", [ "About Mottisfont", "Indian encounter", "Mottisfont is a thin place", "My name is Howard and I'm a volunteer", "Reaching Beyond Religion", "The Font" ]),
+		new Person("Dylan", [ "Change at Mottisfont", "Conservation and Visitor access", "Dylan, the Countryside Manager", "Mottisfont History", "Mottisfont is very special to me", "Challenging and enjoyable roles" ]),
+		new Person("Helen", [ "I didn't expect the Challenges", "I was the wild card", "Mottisfont has so much to offer", "Mottisfont means everything to me", "My Journey to Mottisfont", "One of many moments at Mottisfont" ]),
+		new Person("Howard", [ "About Mottisfont", "Indian encounter", "Mottisfont is a thin place", "My name is Howard, I'm a volunteer", "Reaching Beyond Religion", "The Font" ]),
 		new Person("Jonny", [ "Challenges in my role", "Hello I'm Jonny The Head Gardener", "My passion for gardening", "Roses research", "the Mottisfont Roses" ]),
 		new Person("Louise", [ "Hospitality at Mottisfont", "Magical Mottisfont", "Mottisfont, Art and Maud Russell", "My Journey to Mottisfont", "The National Trust", "The Whistler Room" ])
 	],
