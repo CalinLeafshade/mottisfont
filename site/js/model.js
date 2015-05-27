@@ -4,21 +4,24 @@ var vidExt = ".mp4";
 var imgExt = ".jpg";
 
 Person = function (name, topics) {
-    this.name = name,
-    this.topics = topics
-}
+    this.name = name;
+    this.topics = topics;
+};
 
-Person.prototype.loopingVideo = function() {
+Person.prototype.loopingVideo = function () {
     return (videoRoot + this.name + "/" + "loop" + vidExt).toLowerCase();
 //	return (videoRoot + this.name + "/" + "loop" + imgExt).toLowerCase();
 };
 
-Person.prototype.introVideo = function() {
+Person.prototype.introVideo = function () {
     return (videoRoot + this.name + "/" + "intro" + vidExt).toLowerCase();
-}
+};
 
-Person.prototype.topicVideo = function(idx) {
-    return (videoRoot + this.name + "/" + "topic" + (idx+1) + vidExt).toLowerCase();
+Person.prototype.topicVideo = function (idx) {
+    if (idx === 0)
+        return (videoRoot + this.name + "/" + "intro" + vidExt).toLowerCase();
+    else
+        return (videoRoot + this.name + "/" + "topic" + (idx+1) + vidExt).toLowerCase();
 };
 
 
