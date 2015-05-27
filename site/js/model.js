@@ -21,7 +21,7 @@ Person.prototype.topicVideo = function (idx) {
     if (idx === 0)
         return (videoRoot + this.name + "/" + "intro" + vidExt).toLowerCase();
     else
-        return (videoRoot + this.name + "/" + "topic" + (idx+1) + vidExt).toLowerCase();
+        return (videoRoot + this.name + "/" + "topic" + idx + vidExt).toLowerCase();
 };
 
 
