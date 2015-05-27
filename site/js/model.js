@@ -29,10 +29,10 @@ Person.prototype.topicVideo = function (idx) {
 
 Model = {
     people: [
-        new Person("Catherine", [ i"Catherine, the Outdoor Ranger", "Catherine and The Nuthatch", "Catherine's Flock", "Foraging", "Why I love the seasons", "Zoonotic Diseases (may putt you off your scone!)" ]),
+        new Person("Catherine", [ "Catherine, the Outdoor Ranger", "Catherine and The Nuthatch", "Catherine's Flock", "Foraging", "Why I love the seasons", "Zoonotic Diseases<br /><span class=\"smallo\">(may putt you off your scone!)</span>" ]),
         new Person("Dylan", [ "Dylan, the Countryside Manager", "Change at Mottisfont", "Conservation & Visitor access", "Mottisfont history", "Mottisfont is very special to me", "Challenging and enjoyable roles" ]),
         new Person("Helen", [ "My Journey to Mottisfont","I didn't expect the challenges", "I was the wild card", "Mottisfont has so much to offer", "Mottisfont means everything to me", "One of many moments at Mottisfont" ]),
-        new Person("Howard", [ i"I'm Howard, a Volunteer", "About Mottisfont", "Indian encounter", "Mottisfont is a thin place", "Reaching Beyond Religion", "The Font" ]),
+        new Person("Howard", [ "I'm Howard, a Volunteer", "About Mottisfont", "Indian encounter", "Mottisfont is a thin place", "Reaching Beyond Religion", "The Font" ]),
         new Person("Jonny", [ "Jonny, the Head Gardener", "Challenges in my role", "How I became a gardener","My passion for gardening", "Roses research", "the Mottisfont Roses" ]),
         new Person("Louise", [ "My Journey to Mottisfont", "Hospitality at Mottisfont", "Magical Mottisfont", "Mottisfont, Art and Maud Russell", "The National Trust", "The Whistler Room" ])
     ],
