@@ -32,6 +32,7 @@ function gotoTopic (idx) {
         name: currentPerson.name,
         topic: currentPerson.topics[idx]
     };
+	if (view.topic.indexOf("span") > 0 ) view.topic = "Zoonotic Diseases (may put you off your scone!)"
     var t = $('#topic-template').html();
     $('.container').html(Mustache.render(t, view));
 }
