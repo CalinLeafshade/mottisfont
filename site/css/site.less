@@ -2,6 +2,7 @@
 
 html, body {
 	height: 100%;
+	overflow-y: hidden;
 }
 body {
 	background: url("/images/main_background_tint.jpg"); 
@@ -50,7 +51,15 @@ video {
 	}
 
 }
-
+.perthumb video, .topvid video {
+	margin: auto;
+}
+.perthumb video {
+	width: 920px;
+}
+.topvid video {
+	width: 980px;
+}
 .btn {
 	color: #fff;
 	background-color: #738f3b;
@@ -82,7 +91,7 @@ video {
 .topvid {
 	margin-bottom: 16px;
 }
-.perthumb {
+.perthumb, .topvid {
 	text-align: center;	
 }
 
