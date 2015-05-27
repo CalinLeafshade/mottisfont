@@ -11,7 +11,7 @@ function gotoPerson (name) {
     var t = $('#person-template').html();
     currentPerson = Model.personByName(name);
     var view = {
-        loopingVideo: currentPerson.loopingVideo,
+        introVideo: currentPerson.introVideo(),
         name: currentPerson.name,
         topics: currentPerson.topics.map(function(e,i) {
           return { id: i, text: e };
