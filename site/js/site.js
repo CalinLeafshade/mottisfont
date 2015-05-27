@@ -5,6 +5,12 @@ function backToMain () {
     var t = $('#main-template').html();
     $('.container').html(Mustache.render(t, Model));
     currentPerson = null;
+    
+    // polyfill looping on chrome with odd resolutions
+    $('video').on('ended', function () {
+        this.currentTime = 0.1;
+        this.play();
+    });
 }
 
 function gotoPerson (name) {
