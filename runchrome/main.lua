@@ -7,7 +7,7 @@ function love.draw()
 end
 function love.mousereleased(x, y, button)
 	if button == "l" then
-		if os.execute("google-chrome --kiosk http://localhost:3000/ &") then
+		if os.execute("google-chrome --kiosk --incognito http://localhost:3000/ &") then
 			love.event.push ( "quit" )
 		end
 	end
